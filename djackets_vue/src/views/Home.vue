@@ -11,7 +11,7 @@
     </div>
 
    </section>
-   <div class="column is-multiline">
+   <div class="columns is-multiline">
      <div class="column is-12">
        <h2 class="is-size-2 has-text-centered"> Latest products </h2>
      </div>
@@ -35,7 +35,7 @@
     </div>
 
     </div>
-    </div>
+  </div>
 </template>
 
 <script>
