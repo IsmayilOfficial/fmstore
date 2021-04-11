@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-02$b$=gym*x^r=a)4f=h-dv0^g&6pb-#mikzk-$(!65xv*u--a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['storefm.herokuapp.com']
 
 STRIPE_SECRET_KEY = 'sk_test_51IalSpE63rmDs3v7Rm93tkMBz0boAGXdO1s0gZS6qcbctp3LTX9AlgZhkPXF1xt40q70b1hj1Gu6MitrzvrlqluJ00tfDA26rJ'
 
@@ -51,10 +51,30 @@ INSTALLED_APPS = [
 
 
 ]
+
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
+   
+    #  "http://localhost:8080"
+    # "https://storefm.netlify.app/"
 ]
 
+CORS_ALLOW_METHODS = (
+        'GET',
+        'POST',
+        'PUT',
+        'PATCH',
+        'DELETE',
+        'OPTIONS'
+)
+
+CORS_ALLOW_HEADERS = (
+        'x-requested-with',
+        'content-type',
+        'accept',
+        'origin',
+        'authorization',
+        'x-csrftoken'
+)
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
